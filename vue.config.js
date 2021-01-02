@@ -1,8 +1,3 @@
-// module.exports = {
-//   devServer: {
-//       proxy: 'https://gis.taiwan.net.tw'
-//   }
-// }
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
     ? '/exercise/'
