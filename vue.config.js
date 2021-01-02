@@ -4,6 +4,9 @@
 //   }
 // }
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/greenery/'
+    : '/',
   devServer: {
    open: true,
    host: 'localhost',  // 設置主機地址
