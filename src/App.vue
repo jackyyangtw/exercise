@@ -79,7 +79,7 @@ export default {
   created(){
     const vm = this
     vm.isLoading = true
-    this.$http({
+    this.axios({
       url: '/api/XMLReleaseALL_public/scenic_spot_C_f.json',
       method: "get",
       crossdomain: true,
