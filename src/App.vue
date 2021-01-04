@@ -80,7 +80,7 @@ export default {
     const vm = this
     vm.isLoading = true
     this.axios({
-      url: '/api/XMLReleaseALL_public/scenic_spot_C_f.json',
+      url: process.env.VUE_APP_API_ENDPOINT,
       method: "get",
       crossdomain: true,
     }).then((res) => {
